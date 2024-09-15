@@ -15,6 +15,14 @@ $font_title-color: #D67E34;
     font-weight: 700;
 }
 @font-face {
+    font-family: 'Open-Sans-italic';
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
+@font-face {
+    font-family: 'Open-Sans-semibold';
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
     font-family: 'Tinos';
     src: url(../fonts/Tinos-Regular.ttf);
     font-weight: 400;
@@ -292,7 +300,7 @@ li{
             margin: auto;
         }
         @media (max-width: 863px) {
-            width: 55%;
+            width: 75%;
             display: flex;
             padding: 10px;
             align-items: center;
@@ -585,10 +593,13 @@ li{
         }
     }
     &__dots{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        &-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
         &__first-dot{
             width: 7px;
             height: 7px;
@@ -613,7 +624,7 @@ li{
     background: url(../img/bg-menu.svg) no-repeat center center / cover;
     padding: 100px 164px 435px 166px;
     @media (max-width: 1215px) {
-        padding: 100px 164px 226px 166px;
+        padding: 100px 164px 226px 164px;
     }
 
     @media (max-width: 500px) {
@@ -800,6 +811,81 @@ li{
             box-shadow: 5px 5px 20px 0px rgba(0,0,0, 25%);
             text-align: center;
             background: $font_title-color;
+        }
+    }
+}
+
+.review{
+    background: #E5E5E5;
+    padding: 104px 0 107px 0;
+    @media (max-width: 500px) {
+        padding: 1px 15px 25px 15px;
+    }
+
+    &__text{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+        width: 910px;
+        text-align: center;
+        font-family: Open-Sans-italic;
+        font-style: italic;
+        font-size: 20px;
+        @media (max-width: 910px) {
+            width: 390px;
+        }
+        @media (max-width: 500px) {
+            width: 290px;
+        }
+    }
+    &__user{   
+        &-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__text{
+            margin-bottom: 25px;
+            &__title{
+                font-family: Open-Sans-semibold;
+                font-size: 20px;
+                text-align: center;
+            }
+            &__name{
+                font-family: Open-Sans-regular;
+                font-weight: 400;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+    &__dots{
+        &-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+        &__fill-dot{
+            width: 5px;
+            height: 5px;
+            border-radius: 90px;
+            background: #C4C4C4;
+        }
+        &__border-dot{
+            width: 7px;
+            height: 7px;
+            border: 1px solid $btn_color;
+            border-radius: 90px;
         }
     }
 }

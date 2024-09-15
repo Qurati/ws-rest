@@ -10,6 +10,14 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: "Open-Sans-italic";
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: "Open-Sans-semibold";
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
   font-family: "Tinos";
   src: url(../fonts/Tinos-Regular.ttf);
   font-weight: 400;
@@ -312,7 +320,7 @@ li {
 }
 @media (max-width: 863px) {
   .history__card {
-    width: 55%;
+    width: 75%;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -631,11 +639,12 @@ li {
     gap: 17px;
   }
 }
-.cooks__dots {
+.cooks__dots-wrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2px;
 }
 .cooks__dots__first-dot {
   width: 7px;
@@ -662,7 +671,7 @@ li {
 }
 @media (max-width: 1215px) {
   .menu {
-    padding: 100px 164px 226px 166px;
+    padding: 100px 164px 226px 164px;
   }
 }
 @media (max-width: 500px) {
@@ -854,4 +863,80 @@ li {
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
   background: #D67E34;
+}
+
+.review {
+  background: #E5E5E5;
+  padding: 104px 0 107px 0;
+}
+@media (max-width: 500px) {
+  .review {
+    padding: 1px 15px 25px 15px;
+  }
+}
+.review__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+  width: 910px;
+  text-align: center;
+  font-family: Open-Sans-italic;
+  font-style: italic;
+  font-size: 20px;
+}
+@media (max-width: 910px) {
+  .review__text {
+    width: 390px;
+  }
+}
+@media (max-width: 500px) {
+  .review__text {
+    width: 290px;
+  }
+}
+.review__user-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.review__user__img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review__user__text {
+  margin-bottom: 25px;
+}
+.review__user__text__title {
+  font-family: Open-Sans-semibold;
+  font-size: 20px;
+  text-align: center;
+}
+.review__user__text__name {
+  font-family: Open-Sans-regular;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.review__dots-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.review__dots__fill-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 90px;
+  background: #C4C4C4;
+}
+.review__dots__border-dot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #FF7400;
+  border-radius: 90px;
 }
