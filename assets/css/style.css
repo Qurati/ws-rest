@@ -14,6 +14,11 @@
   src: url(../fonts/Tinos-Regular.ttf);
   font-weight: 400;
 }
+@font-face {
+  font-family: "Cookie";
+  src: url(../fonts/Cookie-Regular.ttf);
+  font-weight: 400;
+}
 /*###############################################*/
 * {
   margin: 0;
@@ -649,4 +654,204 @@ li {
   .cooks__dots {
     display: none;
   }
+}
+
+.menu {
+  background: url(../img/bg-menu.svg) no-repeat center center/cover;
+  padding: 100px 164px 435px 166px;
+}
+@media (max-width: 1215px) {
+  .menu {
+    padding: 100px 164px 226px 166px;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    padding: 62px 15px 106px 15px;
+  }
+}
+.menu__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 138px;
+  text-wrap: nowrap;
+  width: 270px;
+  color: #fff;
+  font-size: 54px;
+  font-family: Tinos;
+  font-weight: 400;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.menu__card {
+  width: 350px;
+  height: 539px;
+  gap: 30px;
+  background: #fff;
+}
+@media (max-width: 1215px) {
+  .menu__card {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.menu__card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__card__recommended {
+  position: absolute;
+  width: 124px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: Open-Sans-regular;
+  text-transform: uppercase;
+  background: #D67E34;
+}
+.menu__card__img {
+  margin-bottom: 22px;
+}
+.menu__card__img__burger {
+  padding: 80px 62px 0px 63px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1215px) {
+  .menu__card__img__burger {
+    padding: 80px 26px 18px 39px;
+  }
+}
+.menu__card__img__price::after {
+  content: "420";
+  height: 100px;
+  width: 100px;
+  background: #D67E34;
+  border: 7px solid #fff;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  top: -310px;
+  margin: 205px 58px 0 192px;
+  font-family: Cookie;
+}
+@media (max-width: 1215px) {
+  .menu__card__img__price::after {
+    margin: 205px 21px 0 169px;
+    content: "$42";
+  }
+}
+.menu__card__text {
+  position: relative;
+  top: -310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__card__text__title {
+  font-size: 26px;
+  font-family: Tinos;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.menu__card__text__subtitle {
+  text-align: center;
+  width: 190px;
+  font-size: 16px;
+  font-family: Open-Sans-regular;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.menu__card__btn {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -310px;
+  width: 220px;
+  height: 50px;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  background: #D67E34;
+}
+.menu__card2 {
+  width: 350px;
+  height: 539px;
+  background: #fff;
+}
+@media (max-width: 1215px) {
+  .menu__card2 {
+    display: none;
+  }
+}
+.menu__card2__img {
+  margin-bottom: 22px;
+}
+.menu__card2__img__burger {
+  padding: 80px 62px 0px 63px;
+  position: relative;
+  z-index: 1;
+}
+.menu__card2__img__price {
+  height: 100px;
+  width: 100px;
+  background: #D67E34;
+  border: 7px solid #fff;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  top: -310px;
+  margin: 205px 58px 0 192px;
+  font-family: Cookie;
+}
+.menu__card2__text {
+  position: relative;
+  top: -310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__card2__text__title {
+  font-size: 26px;
+  font-family: Tinos;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.menu__card2__text__subtitle {
+  text-align: center;
+  width: 190px;
+  font-size: 16px;
+  font-family: Open-Sans-regular;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.menu__card2__btn {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -310px;
+  width: 220px;
+  height: 50px;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  background: #D67E34;
 }
