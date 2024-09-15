@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1.5px solid gray;
 }
 
 a {
@@ -569,6 +568,7 @@ li {
 
 .cooks {
   padding: 0px 17px 0px 15.2px;
+  margin-bottom: 137px;
 }
 .cooks__title {
   display: flex;
@@ -599,6 +599,9 @@ li {
     margin-bottom: 81px;
   }
 }
+.cooks__img {
+  margin-bottom: 50px;
+}
 .cooks__img-wrap {
   display: flex;
   justify-content: space-between;
@@ -621,5 +624,29 @@ li {
     margin: auto;
     align-items: center;
     gap: 17px;
+  }
+}
+.cooks__dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cooks__dots__first-dot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #FFD4D4;
+  border-radius: 90px;
+}
+.cooks__dots__second-dot {
+  width: 5px;
+  height: 5px;
+  border: 1px solid #C4C4C4;
+  border-radius: 90px;
+  background-color: #C4C4C4;
+}
+@media (max-width: 1100px) {
+  .cooks__dots {
+    display: none;
   }
 }
