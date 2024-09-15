@@ -310,22 +310,24 @@ li {
 }
 @media (max-width: 1000px) {
   .history__card {
-    width: 50%;
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-top: -315px;
+    margin-bottom: 275px;
   }
 }
 @media (max-width: 863px) {
   .history__card {
-    width: 75%;
     display: flex;
     padding: 10px;
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-top: -315px;
+    margin-bottom: 265px;
   }
 }
 .history__card-wrap {
